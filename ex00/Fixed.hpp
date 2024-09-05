@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Fixed.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ritavasquesrita <ritavasquesrita@studen    +#+  +:+       +#+        */
+/*   By: ritavasques <ritavasques@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/25 13:00:17 by ritavasques       #+#    #+#             */
-/*   Updated: 2024/07/25 13:30:10 by ritavasques      ###   ########.fr       */
+/*   Created: 2024/07/13 11:17:22 by ritavasques       #+#    #+#             */
+/*   Updated: 2024/09/05 14:39:29 by ritavasques      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,13 +21,13 @@ class Fixed {
         static const int _fracBits = 8;
     public:
         Fixed( void );
-        Fixed ( const Fixed &src );
+        Fixed( const Fixed& other );
         ~Fixed( void );
-
-        Fixed& operator=( const Fixed &src);
-
+        
+        Fixed& operator=( const Fixed& other );
+        
         int getRawBits( void ) const;
-        void setRawBits( int const raw);
+        void setRawBits( int const raw );
 };
 
 #endif
