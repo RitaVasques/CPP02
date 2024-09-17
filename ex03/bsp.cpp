@@ -6,7 +6,7 @@
 /*   By: ritavasques <ritavasques@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/06 15:07:41 by ritavasques       #+#    #+#             */
-/*   Updated: 2024/09/09 12:09:20 by ritavasques      ###   ########.fr       */
+/*   Updated: 2024/09/17 11:15:06 by ritavasques      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,7 @@ bool bsp(Point const a, Point const b, Point const c, Point const point) {
 	
 	bool result = true;
 	
-	if (*S1 >= 0 && *S2 >= 0 && (*S1 + *S2) <= 1)
+	if (*S1 > 0 && *S2 > 0 && (*S1 + *S2) < 1)
 		result = true;
 	else
 		result = false;
